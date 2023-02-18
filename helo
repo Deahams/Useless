@@ -1,0 +1,66 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Funny Hub (EARLY ACCESS)", HidePremium = false, SaveConfig = true, IntroEnabled == true, IntroText = "Funny Hub"})
+
+local Tab = Window:MakeTab({
+	Name = "Scripts",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+OrionLib:MakeNotification({
+	Name = "Enjoy!",
+	Content = "Just Enjoy!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+function MakeScriptHub()
+   local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Innocentallity/Scripts/main/Skid%20hub%20leak%20ez')))()
+end
+
+Tab:AddButton({
+	Name = "Load Bolts Hub (Leak By Inno) (Arsenal)",
+	Callback = function()
+      		print()
+      	 MakeScriptHub()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Infinite Yield (Universal)",
+	Callback = function()
+      		print("button pressed")
+      		Makesus()
+  	end    
+})
+
+function Makesus()
+   local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')))()
+end
+
+Tab:AddButton({
+	Name = "Prisonware (Prison Life)",
+	Callback = function()
+      		print("button pressed")
+      		Makesusa()
+  	end    
+})
+
+function Makesusa()
+   local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt')))()
+end
+
+Tab:AddButton({
+	Name = "InnoHub (Arsenal)",
+	Callback = function()
+      		print("button pressed")
+      		MakeInno()
+  	end    
+})
+
+function MakeInno()
+     local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/Innocentallity/Scripts/main/Innohub')))()
+end
+
+OrionLib:Init()
