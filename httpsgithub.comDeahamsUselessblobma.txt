@@ -15,7 +15,7 @@ video.Size = UDim2.new(1,0,1,0)
 local Name = "WHY_DID_AUSTIN_SEND_ME_THIS.mp4"
 
 if not isfile(Name) then
-    writefile(Name, game:HttpGet("https://github.com/Deahams/Useless/blob/main/rapidsave.com_nunca_jamas-x4vue6infhia1%20(1).mp4=true"))
+    writefile(Name, game:HttpGet("https://github.com/Deahams/Useless/blob/main/rapidsave.com_nunca_jamas-x4vue6infhia1%20(1).mp4?raw=true"))
 end
 
 video.Video = syn and getsynasset(Name) or getcustomasset(Name)
