@@ -1,3 +1,7 @@
+local player = game.Players.LocalPlayer
+
+if player then
+
 local startupArgs = ({...})[1] or {}
 
 if getgenv().library ~= nil then
@@ -4572,6 +4576,7 @@ function library:init()
             text = {
                 {self.cheatname, true},
                 {self.gamename, true},
+                {"..player.Name..", true},
                 {'0 fps', true},
                 {'0ms', true},
                 {'00:00:00', true},
