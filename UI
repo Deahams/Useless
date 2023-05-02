@@ -4572,7 +4572,7 @@ function library:init()
             text = {
                 {self.cheatname, true},
                 {self.gamename, true},
-                {"..identifyexecutor()..", true},
+                {"V5.0", true},
                 {'0 fps', true},
                 {'0ms', true},
                 {'00:00:00', true},
