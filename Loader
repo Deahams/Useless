@@ -162,10 +162,10 @@ Luazifier.TextLabel2.Archivable = true
 Luazifier.TextLabel2.ClipsDescendants = false
 Luazifier.TextLabel2.AutoLocalize = true
 Luazifier.TextLabel2.Font = Enum.Font.DenkOne
-Luazifier.TextLabel2.Text = "Ripper Client Loading..."
+Luazifier.TextLabel2.Text = "BruhWare Loading..."
 Luazifier.TextLabel2.TextColor3 = Color3.new(1, 1, 1)
 Luazifier.TextLabel2.TextScaled = false
-Luazifier.TextLabel2.TextSize = 28
+Luazifier.TextLabel2.TextSize = 30
 Luazifier.TextLabel2.TextStrokeColor3 = Color3.new(0, 0, 0)
 Luazifier.TextLabel2.TextStrokeTransparency = 1
 Luazifier.TextLabel2.TextTransparency = 0
@@ -231,14 +231,14 @@ getByName("Support Ukraine"):Destroy()
 --Loader
 
 for i,v in next, game:GetService("CoreGui"):GetChildren() do
-	if v.Name == "RipperClient" then
+	if v.Name == "BruhWare" then
 		v:Destroy()
 	end
 end
 
 -- Main Interfacing
 
-local RipperClient = Instance.new("ScreenGui")
+local BruhWare = Instance.new("ScreenGui")
 local Background = Instance.new("Frame")
 local TopBar = Instance.new("Frame")
 local TitleText = Instance.new("TextLabel")
@@ -259,11 +259,11 @@ local CreditsValue = Instance.new("TextLabel")
 local BackButtonBack = Instance.new("ImageLabel")
 local BackIcon = Instance.new("ImageLabel")
 local BackButton = Instance.new("TextButton")
-RipperClient.Name = "RipperClient"
-RipperClient.Parent = game:GetService("CoreGui")
+BruhWaret.Name = "BruhWare"
+BruhWare.Parent = game:GetService("CoreGui")
 
 Background.Name = "Background"
-Background.Parent = RipperClient
+Background.Parent = BruhWare
 Background.Active = true
 Background.ClipsDescendants = true
 Background.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
@@ -285,7 +285,7 @@ TitleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TitleText.BackgroundTransparency = 1.000
 TitleText.Size = UDim2.new(0, 400, 0, 35)
 TitleText.Font = Enum.Font.GothamSemibold
-TitleText.Text = "Ripper Client - Loader - "..identifyexecutor()..""
+TitleText.Text = "BruhWare V6 - Loader - "..identifyexecutor()..""
 
 TitleText.TextColor3 = Color3.fromRGB(255, 255, 255)
 TitleText.TextSize = 20.000
@@ -369,7 +369,7 @@ PatchNotesValue.BackgroundTransparency = 1.000
 PatchNotesValue.BorderSizePixel = 0
 PatchNotesValue.Size = UDim2.new(1, 0, 1, 0)
 PatchNotesValue.Font = Enum.Font.GothamSemibold
-PatchNotesValue.Text = "Changed Loader"
+PatchNotesValue.Text = "New UI"
 PatchNotesValue.TextColor3 = Color3.fromRGB(255, 255, 255)
 PatchNotesValue.TextSize = 14.000
 
@@ -416,7 +416,7 @@ end)
 StartButton.MouseButton1Click:Connect(function()
 	ClickSound:Play()
 	Background:TweenPosition(UDim2.new(0, -400, 0.5, -150), "In","Sine", .2)
-	loadstring(game:HttpGet("https://pastebin.com/raw/xPZYjcuf"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Deahams/Useless/main/Main.lua"))()
         if not isfile("ooo.mp3") then writefile("ooo.mp3", game:HttpGet("https://github.com/Deahams/Useless/blob/main/Awesome%20(1).mp3?raw=true")) end local song = Instance.new("Sound", workspace) song.SoundId = getsynasset("ooo.mp3") song:play() task.wait(9.1) game.ReplicatedStorage.Peep:FireServer()
 end)
 
