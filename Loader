@@ -259,7 +259,7 @@ local CreditsValue = Instance.new("TextLabel")
 local BackButtonBack = Instance.new("ImageLabel")
 local BackIcon = Instance.new("ImageLabel")
 local BackButton = Instance.new("TextButton")
-BruhWaret.Name = "BruhWare"
+BruhWare.Name = "BruhWare"
 BruhWare.Parent = game:GetService("CoreGui")
 
 Background.Name = "Background"
