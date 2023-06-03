@@ -1,3 +1,7 @@
+--Notif System
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
+--End Notif System
+
 --Loader
 
 for i,v in next, game:GetService("CoreGui"):GetChildren() do
@@ -414,9 +418,20 @@ repeat task.wait() until Flag.ImageTransparency == 1
 getByName("Support Ukraine"):Destroy()
 
 --End Support
+--Check for other instances and load main script
+Notification.new("info", "Loading BruhWare", "Please Wait...")
+wait(2)
+Notification.new("success", "Success!", "Main instance created!")
+wait(0.1)
+Notification.new("info", "Loading Extra Stuff", "Loading...")
+wait(1.5)
+Notification.new("success", "Loaded!", "Launching!")
+--End Check for other instances and load main script
+
 --Script
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Deahams/Useless/main/Main.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Deahams/Useless/main/Main.lua"))()
 end)
 --End Script
+
 -- Slide in UI when everything's done
 Background:TweenPosition(UDim2.new(0, 0, 0.5, -150), "Out","Sine", .5)
